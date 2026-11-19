@@ -1,14 +1,7 @@
-# 岗位与培训计划
+# 岗位技能与培训采购资料
 
-本地合成业务资料。人名标识、去向、机构和观测均为虚构，不接入外部系统。
+本地合成业务资料，不含真实求职者或企业信息。仓库包含往届招聘邀约、结局、当前岗位组、企业资格证据、候选人证书与时间、培训报价及采购记录。
 
-## 输入约定
+`data/supplies.json` 按业务表保存记录，`data/fields.json` 记录各表字段及资料中出现的值类型。`historical_rounds` 描述往届批次、邀约方式和观察期限，`exposures` 与 `outcomes` 保存候选人的邀约过程和后续结果。`postings` 按共用招聘名额的岗位组组织广告；`qualifications` 记录企业确认或待核的资格组合，`changes` 保存用工变化。`candidates` 与 `certificates` 记录人选与已核资格，`quotes` 描述课程时段、席位、先修和费用，`purchases` 与 `accepted` 保存已作出的采购和接收承诺。`procurement` 记录本期预算及历史对照要求。
 
-`data/supplies.json` 以表名组织记录；`data/fields.json` 列出字段及该资料出现的值类型。
-
-`posting` 是一条招聘广告，`opening_group` 是该组填一次即减少一个名额的独立需求单位；同组 `slots` 不按广告累计。`requirements.alternatives` 中任一组合可满足该条件，`level` 区分硬性、优先和待确认；只对认证证据覆盖的时点作已确认判断。`evidence_at` 是采购组能知道的日期；`hire_outcomes` 与 `cohort` 的实际招聘时间用于未来的验证对照，未招聘不能简单认定候选不合格。
-`candidate_skills` 只记录证书和有效时间；`availability` 给出可以到课的时段。`courses` 的席位按课程独立，要预留已签约的开班及其席位，`prerequisite` 为空时没有先修；非空的任一课程应先满足所列资格要求。一个学员只能承诺去一个岗位；岗位填补后不能再用其他课程分支独立认领。在合同范围内比较成本和可解释的补缺效果，是否先预测短缺、如何从已标注批次泛化由分析人员选择，保留可复核验证结果。
-
-## 资料检查
-
-在 Linux 上使用 Python 3.11 及标准库，无需安装第三方包。运行 `python3 -m unittest discover -s tests -v` 检查表字段、类型和关键关联。当前仓库只包含业务来源资料及检查，尚无分析结果或业务操作入口。
+使用 Linux、Python 3.11 及标准库运行 `python3 -m unittest discover -s tests -v`，检查数据字段、类型和关键关联。资料仓库不包含效果分析或采购入口。

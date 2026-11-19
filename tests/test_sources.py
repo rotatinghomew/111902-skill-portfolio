@@ -33,8 +33,10 @@ class SourceContract(unittest.TestCase):
                     self.assertIn(type(row[field]).__name__, accepted, (table, field))
 
     def test_source_relationships(self):
-        self.references('requirements', 'opening_group', 'postings', 'opening_group')
-        self.references('availability', 'person', 'candidate_skills', 'person')
-        self.references('purchase', 'course', 'courses', 'course')
-        for row in self.rows('requirements'):
-            self.assertTrue(all(isinstance(group, list) for group in row['alternatives']))
+        self.references('exposures', 'round', 'historical_rounds', 'round')
+        self.references('outcomes', 'round', 'historical_rounds', 'round')
+        self.references('qualifications', 'group', 'postings', 'opening_group')
+        self.references('purchases', 'quote', 'quotes', 'quote')
+        self.assertGreater(len(self.rows('historical_rounds')), 100)
+        self.assertTrue(any(row['mode'] == '仅优先' for row in self.rows('historical_rounds')))
+        self.assertTrue(any(row['state'] == '已通知不可撤' for row in self.rows('purchases')))
