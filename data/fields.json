@@ -1,0 +1,135 @@
+{
+  "postings": {
+    "posting": [
+      "str"
+    ],
+    "employer": [
+      "str"
+    ],
+    "cohort": [
+      "str"
+    ],
+    "opening_group": [
+      "str"
+    ],
+    "slots": [
+      "int"
+    ],
+    "area": [
+      "str"
+    ],
+    "trade": [
+      "str"
+    ],
+    "text": [
+      "str"
+    ],
+    "recorded": [
+      "str"
+    ]
+  },
+  "requirements": {
+    "opening_group": [
+      "str"
+    ],
+    "level": [
+      "str"
+    ],
+    "alternatives": [
+      "list"
+    ],
+    "evidence_at": [
+      "str"
+    ],
+    "source": [
+      "str"
+    ]
+  },
+  "candidate_skills": {
+    "person": [
+      "str"
+    ],
+    "skills": [
+      "list"
+    ],
+    "evidence": [
+      "str"
+    ],
+    "valid_through": [
+      "str"
+    ]
+  },
+  "availability": {
+    "person": [
+      "str"
+    ],
+    "days": [
+      "list"
+    ]
+  },
+  "courses": {
+    "course": [
+      "str"
+    ],
+    "provides": [
+      "list"
+    ],
+    "prerequisite": [
+      "list"
+    ],
+    "date": [
+      "str"
+    ],
+    "day": [
+      "str"
+    ],
+    "seats": [
+      "int"
+    ],
+    "cost": [
+      "int"
+    ]
+  },
+  "purchase": {
+    "course": [
+      "str"
+    ],
+    "state": [
+      "str"
+    ],
+    "at": [
+      "str"
+    ],
+    "enrolled": [
+      "list"
+    ]
+  },
+  "hire_outcomes": {
+    "cohort": [
+      "str"
+    ],
+    "opening_group": [
+      "str"
+    ],
+    "person": [
+      "str"
+    ],
+    "date": [
+      "str"
+    ],
+    "result": [
+      "str"
+    ],
+    "certified": [
+      "list"
+    ]
+  },
+  "budget": {
+    "period": [
+      "str"
+    ],
+    "total": [
+      "int"
+    ]
+  }
+}

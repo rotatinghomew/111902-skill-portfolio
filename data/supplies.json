@@ -1,0 +1,302 @@
+{
+  "synthetic": true,
+  "tables": {
+    "postings": [
+      {
+        "posting": "A1",
+        "employer": "Q1",
+        "cohort": "历史甲",
+        "opening_group": "G1",
+        "slots": 2,
+        "area": "山口",
+        "trade": "运维",
+        "text": "具有甲类认证优先",
+        "recorded": "2026-04-12"
+      },
+      {
+        "posting": "A2",
+        "employer": "Q1",
+        "cohort": "历史甲",
+        "opening_group": "G1",
+        "slots": 2,
+        "area": "山口",
+        "trade": "运维",
+        "text": "甲类认证或乙类认证",
+        "recorded": "2026-04-14"
+      },
+      {
+        "posting": "A3",
+        "employer": "Q2",
+        "cohort": "历史乙",
+        "opening_group": "G2",
+        "slots": 1,
+        "area": "江北",
+        "trade": "仓配",
+        "text": "熟悉叉车调度，丙类认证优先",
+        "recorded": "2026-07-10"
+      },
+      {
+        "posting": "A4",
+        "employer": "Q1",
+        "cohort": "本季",
+        "opening_group": "G3",
+        "slots": 2,
+        "area": "山口",
+        "trade": "运维",
+        "text": "甲类认证或乙类认证可换证",
+        "recorded": "2026-11-13"
+      },
+      {
+        "posting": "A5",
+        "employer": "Q3",
+        "cohort": "本季",
+        "opening_group": "G3",
+        "slots": 2,
+        "area": "江北",
+        "trade": "运维",
+        "text": "接受园区统配的两个运维名额",
+        "recorded": "2026-11-14"
+      },
+      {
+        "posting": "A6",
+        "employer": "Q2",
+        "cohort": "本季",
+        "opening_group": "G4",
+        "slots": 1,
+        "area": "江北",
+        "trade": "仓配",
+        "text": "丙类认证及冷库经历",
+        "recorded": "2026-11-14"
+      }
+    ],
+    "requirements": [
+      {
+        "opening_group": "G1",
+        "level": "硬性",
+        "alternatives": [
+          [
+            "甲类"
+          ],
+          [
+            "乙类"
+          ]
+        ],
+        "evidence_at": "2026-04-18",
+        "source": "企业"
+      },
+      {
+        "opening_group": "G2",
+        "level": "优先",
+        "alternatives": [
+          [
+            "丙类"
+          ]
+        ],
+        "evidence_at": "2026-07-12",
+        "source": "企业"
+      },
+      {
+        "opening_group": "G3",
+        "level": "待确认",
+        "alternatives": [
+          [
+            "甲类"
+          ],
+          [
+            "乙类"
+          ]
+        ],
+        "evidence_at": "2026-11-13",
+        "source": "原广告"
+      },
+      {
+        "opening_group": "G3",
+        "level": "硬性",
+        "alternatives": [
+          [
+            "甲类"
+          ]
+        ],
+        "evidence_at": "2026-11-20",
+        "source": "企业"
+      },
+      {
+        "opening_group": "G4",
+        "level": "硬性",
+        "alternatives": [
+          [
+            "丙类",
+            "冷库"
+          ]
+        ],
+        "evidence_at": "2026-11-14",
+        "source": "企业"
+      }
+    ],
+    "candidate_skills": [
+      {
+        "person": "K1",
+        "skills": [
+          "甲类"
+        ],
+        "evidence": "认证",
+        "valid_through": "2027-05-01"
+      },
+      {
+        "person": "K2",
+        "skills": [
+          "入门"
+        ],
+        "evidence": "认证",
+        "valid_through": "2027-05-01"
+      },
+      {
+        "person": "K3",
+        "skills": [
+          "冷库"
+        ],
+        "evidence": "经历核实",
+        "valid_through": "2027-05-01"
+      },
+      {
+        "person": "K4",
+        "skills": [
+          "入门",
+          "乙类"
+        ],
+        "evidence": "认证",
+        "valid_through": "2027-05-01"
+      }
+    ],
+    "availability": [
+      {
+        "person": "K1",
+        "days": [
+          "周二",
+          "周四"
+        ]
+      },
+      {
+        "person": "K2",
+        "days": [
+          "周二",
+          "周四"
+        ]
+      },
+      {
+        "person": "K3",
+        "days": [
+          "周四"
+        ]
+      },
+      {
+        "person": "K4",
+        "days": [
+          "周二"
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course": "T1",
+        "provides": [
+          "基础"
+        ],
+        "prerequisite": [],
+        "date": "2026-11-24",
+        "day": "周二",
+        "seats": 2,
+        "cost": 900
+      },
+      {
+        "course": "T2",
+        "provides": [
+          "甲类"
+        ],
+        "prerequisite": [
+          "基础"
+        ],
+        "date": "2026-11-26",
+        "day": "周四",
+        "seats": 1,
+        "cost": 1200
+      },
+      {
+        "course": "T3",
+        "provides": [
+          "乙类"
+        ],
+        "prerequisite": [
+          "入门"
+        ],
+        "date": "2026-11-24",
+        "day": "周二",
+        "seats": 2,
+        "cost": 700
+      },
+      {
+        "course": "T4",
+        "provides": [
+          "丙类"
+        ],
+        "prerequisite": [],
+        "date": "2026-11-26",
+        "day": "周四",
+        "seats": 1,
+        "cost": 1000
+      }
+    ],
+    "purchase": [
+      {
+        "course": "T3",
+        "state": "已签",
+        "at": "2026-11-15",
+        "enrolled": [
+          "K4"
+        ]
+      },
+      {
+        "course": "T2",
+        "state": "草案",
+        "at": "2026-11-16",
+        "enrolled": []
+      }
+    ],
+    "hire_outcomes": [
+      {
+        "cohort": "历史甲",
+        "opening_group": "G1",
+        "person": "H1",
+        "date": "2026-05-04",
+        "result": "录用",
+        "certified": [
+          "甲类"
+        ]
+      },
+      {
+        "cohort": "历史甲",
+        "opening_group": "G1",
+        "person": "H2",
+        "date": "2026-05-08",
+        "result": "录用",
+        "certified": [
+          "乙类"
+        ]
+      },
+      {
+        "cohort": "历史乙",
+        "opening_group": "G2",
+        "person": "H3",
+        "date": "2026-07-29",
+        "result": "录用",
+        "certified": []
+      }
+    ],
+    "budget": [
+      {
+        "period": "2026-11",
+        "total": 3700
+      }
+    ]
+  }
+}
